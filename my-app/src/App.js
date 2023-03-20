@@ -46,6 +46,13 @@ function App() {
               <p>
                 {t.data}
               </p>
+              <button onClick={() => {
+                debugger
+                arr.splice(arr.filter(p => p.id == t.id), 1)
+                SetTask(new Array(arr));
+              }}>
+                X
+              </button>
           </li>
         )) : (
           <li>
